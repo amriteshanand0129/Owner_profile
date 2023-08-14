@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Profile</title>
+    <link rel="stylesheet" href="owner_profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Boofey1.png" alt="Logo" height="100px" class="logo">
+            <div class="nav">
+                <a href="#" class="hometext">Home</a>
+                <a href="#" class="homelogo"><img src="homelogo.png" alt="Home" class="homelogopng"></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="heading">
+            <h3>Edit profile</h3>
+        </div>
+        <div class="info">
+            <form action="">
+                <label for="Tagline" class="Taglinelabel">Tagline: </label>
+                <textarea name="Tagline" id="Tagline" cols="30" rows="3" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br><br>
+                <label for="Aboutus" class="Aboutuslabel">AboutUs: </label>
+                <textarea name="Aboutus" id="Aboutus" cols="30" rows="3" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br><br>
+                <label for="reg_date">Registration Date:</label>
+                <input type="date" max="2023-08-14">
+                <br><br>
+                <label for="Address" class="Addresslabel">Address: </label>
+                <textarea name="Address" id="Address" cols="30" rows="2" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br><br>
+                <label for="Location" class="Locationlabel">Location: </label>
+                <textarea name="Location" id="Location" cols="30" rows="1" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br><br>
+                <label for="City">City: </label>
+                <input type="text" name="City" id="City" maxlength="30">
+                <br><br>
+                <label for="State">State: </label>
+                <input type="text" name="State" id="State" maxlength="30">
+                <br><br>
+                <label for="Contact">Contact No: </label>
+                <input type="tel" name="Contact" id="Contact" maxlength="10">
+                <br><br>
+                <button id="save" name="save">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
