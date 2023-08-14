@@ -7,26 +7,23 @@
     height: 100px;
 }
 .nav {
+    padding-top: 30px;
     padding-right: 5%;
-    padding-top: 40px;
     float: right;
 }
 .hometext {
     font-size: larger;
     text-decoration: none;
     color: black;
+    float: right;
+    padding-right: 8%;
 }
 .hometext:hover {
     color: rgb(142, 142, 142);
 }
-.homelogopng {
-    padding-bottom: 10px;
-    height: 30px;
-}
-.homelogopng:hover {
+.homelogo:hover {
     border-bottom: 1px solid black;
 }
-
 .profile {
     margin:auto;
     width: 50%;
@@ -68,7 +65,10 @@
         width: 70%;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+    .profile {
+        width: 80%;
+    }
     .profile {
         padding-left: 20px;
     }
@@ -76,39 +76,33 @@
         padding-left: 10px;
     }
 }
-@media only screen and (max-width: 450px) {
-    .profile {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 360px) {
-    .logo {
-        max-height: 80px;
-    }
-    .hometext {
-        display: none;
-    }
-    #Tagline, #Aboutus, #Address, #Location {
-        max-width: 90%;
-    }
-    .header {
-        height: 90px;
-    }
-}
-@media only screen and (min-width: 361px) {
+@media only screen and (min-width: 401px) {
     .homelogo {
         display: none;
     }
 }
-@media only screen and (max-width: 260px) {
+@media only screen and (max-width: 400px) {
+    .hometext {
+        display: none;
+    }
+    #Tagline, #Aboutus, #Address, #Location, #City, #State, #Contact {
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 290px) {
     .header {
         height: 80px;
     }
     .logo {
-        max-height: 70px;
+        max-height: 80px;
     }
-    #City, #State, #Contact {
-        max-width: 90%;
+}
+@media only screen and (max-width: 250px) {
+    .header {
+        height: 70px;
+    }
+    .logo {
+        max-height: 70px;
     }
 }
 #save {
@@ -116,7 +110,6 @@
     padding: 8px 10px;
     border: 1px solid rgb(182, 182, 182);
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
 }
 #save:hover {
     box-shadow: 1px 1px 10px rgb(148, 148, 148);
