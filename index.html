@@ -20,32 +20,38 @@
     <div class="profile">
         <div class="heading">
             <h3>Edit profile</h3>
+            <br>
         </div>
         <div class="info">
             <form action="">
                 <label for="Tagline" class="Taglinelabel">Tagline: </label>
-                <textarea name="Tagline" id="Tagline" cols="30" rows="3" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br>
+                <textarea name="Tagline" id="Tagline" cols="150" rows="1" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
                 <br><br>
                 <label for="Aboutus" class="Aboutuslabel">AboutUs: </label>
-                <textarea name="Aboutus" id="Aboutus" cols="30" rows="3" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <br>
+                <textarea name="Aboutus" id="Aboutus" cols="150" rows="1" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
                 <br><br>
                 <label for="reg_date">Registration Date:</label>
-                <input type="date" max="2023-08-14">
+                <br>
+                <input type="date" id="Date" name="Date" max="2023-08-14">
                 <br><br>
                 <label for="Address" class="Addresslabel">Address: </label>
-                <textarea name="Address" id="Address" cols="30" rows="2" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <textarea name="Address" id="Address" cols="150" rows="2" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
                 <br><br>
                 <label for="Location" class="Locationlabel">Location: </label>
-                <textarea name="Location" id="Location" cols="30" rows="1" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
+                <textarea name="Location" id="Location" cols="150" rows="1" maxlength="150" placeholder="Max 150 characters" onfocus="this.placeholder=''"></textarea>
                 <br><br>
-                <label for="City">City: </label>
+                <label for="City" id="Citylabel">City: </label>
+                <label for="State" id="Statelabel">State: </label>
+                <br>
                 <input type="text" name="City" id="City" maxlength="30">
-                <br><br>
-                <label for="State">State: </label>
+                <label for="State" id="Statelabel2">State: </label>
                 <input type="text" name="State" id="State" maxlength="30">
                 <br><br>
                 <label for="Contact">Contact No: </label>
-                <input type="tel" name="Contact" id="Contact" maxlength="10">
+                <br>
+                <input type="tel" name="Contact" id="Contact" maxlength="10" width="90%">
                 <br><br>
                 <button id="save" name="save">Submit</button>
             </form>

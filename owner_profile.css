@@ -2,6 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+textarea {
+    line-height: 25px;
+}
 .header {
     display: block;
     height: 100px;
@@ -33,32 +36,78 @@
     padding-right: 10px;
     padding-bottom: 30px;
 }
+.heading {
+    font-size: larger;
+}
 .info {
     padding-left: 20px;
 }
 #Tagline {
+    margin-top: 10px;
+    max-width: 90%;
     resize:none;
 }
 .Taglinelabel {
     vertical-align: top;
 }
 #Aboutus {
+    margin-top: 10px;
+    max-width: 90%;
     resize: none;
 }
 .Aboutuslabel {
     vertical-align: top;
 }
+#Date {
+    margin-top: 10px;
+    line-height: 25px;
+}
 #Address {
+    margin-top: 10px;
+    max-width: 90%;
     resize: none;
 }
 .Addresslabel {
     vertical-align: top;
 }
 #Location {
+    margin-top: 10px;
+    max-width: 90%;
     resize: none;
 }
 .Locationlabel {
     vertical-align: top;
+}
+#Citylabel, #Statelabel {
+    display:inline-block;
+    width: 45%;
+}
+#City, #State, #Contact {
+    line-height: 25px;
+}
+#City, #State {
+    margin-top: 10px;
+    width: 45%;
+}
+#Contact {
+    margin-top: 10px;
+    width: 50%;
+}
+@media only screen and (min-width: 501px) {
+    #Statelabel2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #Statelabel {
+        display: none;
+    }
+    #City, #State, #Citylabel, #Statelabel2 {
+        width: 90%;
+    }
+    #City {
+        margin-bottom: 10px;
+    }
 }
 @media only screen and (max-width: 650px) {
     .profile {
